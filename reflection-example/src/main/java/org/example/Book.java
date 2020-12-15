@@ -1,5 +1,6 @@
 package org.example;
 
+@MyAnnotation
 public class Book {
 	private String a = "a";
 	private static String B = "BOOK";
@@ -9,6 +10,7 @@ public class Book {
 	public Book() {
 
 	}
+	@AnotherAnnotation
 	public Book(String a, String d, String e) {
 		this.a = a;
 		this.d = d;
@@ -17,6 +19,7 @@ public class Book {
 	private void f() {
 		System.out.println("F");
 	}
+	@AnotherAnnotation
 	public void g() {
 		System.out.println("g");
 	}
